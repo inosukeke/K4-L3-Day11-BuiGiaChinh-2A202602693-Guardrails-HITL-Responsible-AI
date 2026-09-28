@@ -134,3 +134,11 @@ pip install -r requirements.txt
 Rồi mở [`CHECKPOINTS.md`](CHECKPOINTS.md) và làm lần lượt Checkpoint 1 → 5.
 
 Nộp theo [`SUBMISSION.md`](SUBMISSION.md) · Quy định: [`RULES.md`](RULES.md).
+
+---
+
+## Bài nộp cá nhân
+
+- **Họ tên:** Bùi Gia Chính · **MSSV:** 2A202602693
+- **Chạy:** `python src/main.py --part 2` (guardrails) · `--part 3` (pipeline → `outputs/results.json`) · `--part 4` (red-team → `outputs/attack_results.json`)
+- **Ghi chú:** Blue dùng `liquid/lfm-2.5-2.6b:free` vì bản không `:free` không còn endpoint trên OpenRouter. Red/Red Advance có fallback model Gemini khi model chính báo 503/429 (`GEMINI_FALLBACK_MODELS` trong `.env`).
